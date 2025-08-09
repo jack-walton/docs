@@ -18,7 +18,7 @@ const navbar = (
             <p><strong>Help Pages</strong></p>
         }
         children={
-            <Link href="https:jackwalton.xyz" align="right" >jackwalton.xyz</Link>
+            <Link href="https:jackwalton.xyz" >jackwalton.xyz</Link>
         }
         
         // ... Your additional navbar options
