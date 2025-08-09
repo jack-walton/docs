@@ -3,20 +3,30 @@ import {Banner, Head} from 'nextra/components'
 import {getPageMap} from 'nextra/page-map'
 import 'nextra-theme-docs/style.css'
 import Link from "next/link";
+import {Steps, Cards} from 'nextra/components'
+import Image from 'next/image'
 
 export const metadata = {
     // Define your metadata here
     // For more information on metadata API, see: https://nextjs.org/docs/app/building-your-application/optimizing/metadata
 }
 
-const banner = <Banner storageKey="some-key">This template was created with 🩸 and 💦 by <Link href="https://github.com/phucbm">PHUCBM</Link> 🐧</Banner>
+const banner = <Banner storageKey="1.0-release"><Link href="https://github.com/phucbm">Version 1 of the help pages are now available. Read more in my blog →</Link></Banner>
 const navbar = (
     <Navbar
-        logo={<img src="/images/general/logo.svg" alt="Logo" width={100} height={20}/>}
+        logo={
+            <p><strong>Help Pages</strong></p>
+        }
+        children={
+            <Link href="https:jackwalton.xyz" align="right" >jackwalton.xyz</Link>
+        }
+        
         // ... Your additional navbar options
+
+        
     />
 )
-const footer = <Footer>MIT {new Date().getFullYear()} © Nextra.</Footer>
+const footer = <Footer>© {new Date().getFullYear()} MIT Licensed</Footer>
 
 export default async function RootLayout({children}) {
     return (
