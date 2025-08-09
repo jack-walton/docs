@@ -11,7 +11,7 @@ export const metadata = {
     // For more information on metadata API, see: https://nextjs.org/docs/app/building-your-application/optimizing/metadata
 }
 
-const banner = <Banner storageKey="1.0-release"><Link href="https://github.com/phucbm">Version 1 of the help pages are now available. Read more in my blog →</Link></Banner>
+const banner = <Banner storageKey="1.0-release"><Link href="https://github.com/phucbm">Version 1.0 of the help pages are now available. Read more in my blog →</Link></Banner>
 const navbar = (
     <Navbar
         logo={
