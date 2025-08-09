@@ -1,7 +1,7 @@
 {
-  "name": "nextra-docs-starter",
+  "name": "Help Pages",
   "version": "1.0.0",
-  "description": "Nextra docs starter with search included.",
+  "description": "Some Help Pages that I wrote on speculation to be in my portolfio.",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "module",
-    "url": "https://github.com/phucbm/nextra-docs-starter"
+    "url": "https://github.com/jack-walton/help.jackwalton.xyz.git"
   },
-  "author": "PHUCBM",
+  "author": "Jack Walton",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/phucbm/nextra-docs-starter/issues"
+    "url": "https://github.com/jack-walton/help.jackwalton.xyz/issues"
   },
-  "homepage": "https://github.com/phucbm/nextra-docs-starter#readme",
+  "homepage": "https://github.com/jack-walton/help.jackwalton.xyz#readme",
   "dependencies": {
     "next": "^15.3.4",
     "nextra": "^4.2.17",
