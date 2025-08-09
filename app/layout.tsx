@@ -3,8 +3,6 @@ import {Banner, Head} from 'nextra/components'
 import {getPageMap} from 'nextra/page-map'
 import 'nextra-theme-docs/style.css'
 import Link from "next/link";
-import {Steps, Cards} from 'nextra/components'
-import Image from 'next/image'
 
 export const metadata = {
     // Define your metadata here
