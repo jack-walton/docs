@@ -49,6 +49,10 @@ export default async function RootLayout({children}) {
             pageMap={await getPageMap()}
             docsRepositoryBase="https://github.com/phucbm/nextra-docs-starter/tree/main"
             footer={footer}
+            navigation={{
+                prev: true,
+                next: true
+  }}
             // ... Your additional layout options
         >
             {children}
