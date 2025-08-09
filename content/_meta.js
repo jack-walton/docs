@@ -1,8 +1,4 @@
 export default {
-  "about": { 
-    "title": "About",
-    type: "page",
-  },
   "index": {
     "title": "Overview",
     "theme": {
@@ -38,5 +34,9 @@ export default {
     "theme": {
       breadcrumb: false,
     }
+  },
+  "about": { 
+  "title": "About",
+    type: "page",
   },
 }
