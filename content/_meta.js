@@ -1,4 +1,5 @@
 export default {
-  "index": "Overview",
-  "buy-tickets": "Buy Tickets",
+  "index": "Introduction",
+  "How to Use the AXS App": "How to Use the AXS App",
+
 }
