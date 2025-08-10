@@ -54,7 +54,7 @@ export default async function RootLayout({children}) {
             navigation={{
                 prev: true,
                 next: true
-  }}
+            }}
             // ... Your additional layout options
         >
             {children}
