@@ -10,6 +10,46 @@ import { Analytics } from '@vercel/analytics/next';
 export const metadata = {
     // Define your metadata here
     // For more information on metadata API, see: https://nextjs.org/docs/app/building-your-application/optimizing/metadata
+    title: {
+      default: 'Jack Walton | Help Pages',
+      template: '%s | Help Pages',
+    },
+    description: 'Some help pages to assist you with your needs',
+
+    icons: {
+      icon: '/icon.png',
+      shortcut: '/favicon.ico',
+      apple: '/apple-icon.png',
+    },
+
+
+    openGraph: {
+      title: 'Jack Walton',
+      description: 'Jack Walton\'s portfolio.',
+    url: 'https://jackwalton.xyz', // Ensure baseUrl resolves to a full URL
+    siteName: 'Jack Walton',
+    locale: 'en_US',
+    type: 'website',
+    images: [{
+      url: 'https://jackwalton.xyz/thumbnail.png',
+      width: 1200, // Updated to recommended size
+      height: 630, // Updated to recommended size
+      alt: 'Jack Walton',
+      type: 'image/png',
+    }],
+  },
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        'max-video-preview': -1,
+        'max-image-preview': 'large',
+        'max-snippet': -1,
+      },
+    },
+  };
 }
 
 const banner = <Banner storageKey="1.0-release">Version 1.0 of the Help pages are now available. <Link href="https://jackwalton.xyz/blog/open-source" style={{ textDecoration: 'underline' }}>Read more in my blog</Link> →</Banner>
