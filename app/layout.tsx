@@ -17,8 +17,7 @@ export const metadata = {
     description: 'Some help pages to assist you with your needs',
 
     icons: {
-      icon: '/icon.png',
-      shortcut: '/favicon.ico',
+      icon: '/icon.svg',
       apple: '/apple-icon.png',
     },
 
