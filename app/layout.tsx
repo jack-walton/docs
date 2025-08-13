@@ -50,7 +50,6 @@ export const metadata = {
       },
     },
   };
-}
 
 const banner = <Banner storageKey="1.0-release">Version 1.0 of the Help pages are now available. <Link href="https://jackwalton.xyz/blog/open-source" style={{ textDecoration: 'underline' }}>Read more in my blog</Link> →</Banner>
 
