@@ -18,7 +18,6 @@ export const metadata = {
 
     icons: {
       icon: '/icon.svg',
-      shortcut: '/apple-icon.png',
     },
 
     openGraph: {
