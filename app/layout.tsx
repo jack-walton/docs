@@ -15,11 +15,7 @@ export const metadata = {
       template: '%s | Help Pages',
     },
     description: 'Some help pages to assist you with your needs',
-
-    icons: {
-      icon: '/icon.svg',
-    },
-
+    icon: '/icon.svg',
     openGraph: {
       title: 'Help Pages',
       description: 'Jack Walton\'s portfolio.',
