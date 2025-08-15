@@ -1,7 +1,7 @@
 import './global.css'
 
 import {Footer, Layout, Navbar} from 'nextra-theme-docs'
-import {Banner, Head} from 'nextra/components'
+import {Banner, Head, Search} from 'nextra/components'
 import {getPageMap} from 'nextra/page-map'
 import 'nextra-theme-docs/style.css'
 import Link from "next/link";
@@ -21,34 +21,22 @@ export const metadata = {
       apple: '/apple-icon.png',
     },
 
-
     openGraph: {
-      title: 'Jack Walton',
+      title: 'Help Pages',
       description: 'Jack Walton\'s portfolio.',
-    url: 'https://jackwalton.xyz', // Ensure baseUrl resolves to a full URL
-    siteName: 'Jack Walton',
+    url: 'https://help.jackwalton.xyz', // Ensure baseUrl resolves to a full URL
+    siteName: 'Help Pages',
     locale: 'en_US',
     type: 'website',
     images: [{
-      url: 'https://jackwalton.xyz/thumbnail.png',
+      url: '/thumbnail.png',
       width: 1200, // Updated to recommended size
       height: 630, // Updated to recommended size
       alt: 'Jack Walton',
       type: 'image/png',
     }],
   },
-    robots: {
-      index: true,
-      follow: true,
-      googleBot: {
-        index: true,
-        follow: true,
-        'max-video-preview': -1,
-        'max-image-preview': 'large',
-        'max-snippet': -1,
-      },
-    },
-  };
+};
 
 const banner = <Banner storageKey="1.0-release">Version 1.0 of the Help pages are now available. <Link href="https://jackwalton.xyz/blog/open-source" style={{ textDecoration: 'underline' }}>Read more in my blog</Link> →</Banner>
 
@@ -64,6 +52,12 @@ const navbar = (
         // ... Your additional navbar options
 
         
+    />
+)
+
+const search = (
+    <Search 
+      placeholder={"Search the help pages"}
     />
 )
 const footer = <Footer>© {new Date().getFullYear()} MIT Licensed</Footer>
@@ -88,6 +82,7 @@ export default async function RootLayout({children}) {
         <Layout
             banner={banner}
             navbar={navbar}
+            search={search}
             pageMap={await getPageMap()}
             docsRepositoryBase="https://github.com/jack-walton/help.jackwalton.xyz/tree/main"
             footer={footer}
