@@ -1,42 +1,20 @@
-export default {
+const meta = {
   "index": {
-    "title": "Overview",
+    "title": "Introduction",
     "theme": {
       breadcrumb: false,
     }
   },
-  "navigate-the-app": {
-  "title": "Navigate the App",
-  "theme": {
-    breadcrumb: false,
-    }
-  },
-  "create-an-account": {
-  "title": "Create an Account",
-  "theme": {
-      breadcrumb: false,
-    },
-  },
-  "sign-in": {
-    "title": "Sign In",
-    "theme": {
-      breadcrumb: false,
-    },
-  },
-  "search-for-events": {
-    "title": "Search for Events",
-    "theme": {
-      breadcrumb: false,
-    }
-  },
-  "buy-tickets": {
-    "title": "Buy Tickets",
-    "theme": {
-      breadcrumb: false,
-    }
-  },
-  "about": { 
+
+"AXS": "The AXS App",
+
+"tea": "Green Tea",
+
+"about": { 
   "title": "About",
     type: "page",
   },
 }
+
+export default meta;
+
