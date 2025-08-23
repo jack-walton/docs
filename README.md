@@ -1,15 +1,6 @@
-# Nextra Docs Starter 
+# Documentation
 
-![Vercel Deploy](https://deploy-badge.vercel.app/vercel/nextra-docs-starter)
-
-This starter template includes the following features:
-
-- [x] **Nextra 4**
-- [x] **Search with Pagefind**
-
-[**Live Demo →**](https://nextra-docs-starter.vercel.app)
-
-[![](.github/screenshot.png)](https://nextra-docs-starter.vercel.app)
+This is a documentation repository built with Next.js using the Nextra theme. I use it to demonstrate some case studies for my portolio. I also plan to use it for various documentation tasks related to my personal projects.
 
 ## Local Development
 
