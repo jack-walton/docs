@@ -1,8 +1,8 @@
 const meta = {
-"index": "Overview",
-"page1": "Page 1",
-"page2": "Page 2",
-"page03": "Page 3",
+"index": "Overview of Green Tea",
+"select-your-tea": "Select Your Tea",
+"prepare-your-tea": "Prepare Your Tea",
+"manage-your-habit": "Manage Your Habit",
 }
 
 export default meta;

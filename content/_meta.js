@@ -8,7 +8,7 @@ const meta = {
 
 "AXS": "The AXS App",
 
-"tea": "Green Tea",
+"tea": "Getting Started with Green Tea",
 
 "about": { 
   "title": "About",
