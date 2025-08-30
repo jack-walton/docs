@@ -6,8 +6,12 @@ const meta = {
     }
   },
 
-"astro-nano": "Astro Nano Theme",
 "chiri": "CHIRI Theme",
+
+"further-reading": { 
+  "title": "Further Reading",
+    type: "page",
+  },
 
 "about": { 
   "title": "About",

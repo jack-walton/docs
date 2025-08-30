@@ -9,20 +9,20 @@ export const metadata = {
     // Define your metadata here
     // For more information on metadata API, see: https://nextjs.org/docs/app/building-your-application/optimizing/metadata
     title: {
-      default: 'Jack Walton | Help Pages',
-      template: '%s | Help Pages',
+      default: 'Jack Walton | Docs',
+      template: '%s | Docs',
     },
-    description: 'Some help pages to assist you with your needs',
+    description: 'Some developer documentation for my projects',
 
     icons: {
       icon: '/icon.svg',
       shortcut: '/icon.svg',
     },
     openGraph: {
-      title: 'Help Pages',
+      title: 'Docs',
       description: 'Jack Walton\'s portfolio.',
-    url: 'https://help.jackwalton.xyz', // Ensure baseUrl resolves to a full URL
-    siteName: 'Help Pages',
+    url: 'https://docs.jackwalton.xyz', // Ensure baseUrl resolves to a full URL
+    siteName: 'Documentation',
     locale: 'en_US',
     type: 'website',
     images: [{
@@ -40,7 +40,7 @@ const banner = <Banner storageKey="1.0-release">Version 1.0 of the Help pages ar
 const navbar = (
     <Navbar
         logo={
-            <p><strong>Help Pages</strong></p>
+            <p><strong>Documentation</strong></p>
         }
         children={
             <Link href="https://jackwalton.xyz" >jackwalton.xyz</Link>
@@ -54,7 +54,7 @@ const navbar = (
 
 const search = (
     <Search 
-      placeholder={"Search the help pages"}
+      placeholder={"Search the documentation"}
     />
 )
 const footer = <Footer>© {new Date().getFullYear()} MIT Licensed</Footer>

@@ -2,68 +2,81 @@
 title: Embedded Content
 ---
 
-Use these directives to embed media:
+# Embedded Content
 
-```
-::link{url="https://xxxxx.xxx"}
+import {Callout} from 'nextra/components'
 
-::spotify{url="https://open.spotify.com/type/xxxxx"}
+Use these shortcodes to embed media:
 
-::youtube{url="https://www.youtube.com/watch?v=xxxxx"}
+- `::link{url="https://xxxxx.xxx"}`
+- `::spotify{url="https://open.spotify.com/type/xxxxx"}`
+- `::youtube{url="https://www.youtube.com/watch?v=xxxxx"}`
+- `::bilibili{url="https://www.bilibili.com/video/xxxxx"}`
+- `::github{repo="username/repo"}`
+- `::x{url="https://x.com/username/status/xxxxx"}`
+- `::neodb{url="https://neodb.social/category/xxxxx"}`
 
-::bilibili{url="https://www.bilibili.com/video/xxxxx"}
+<Callout type="info">
 
-::github{repo="username/repo"}
+When embedded content is still loading, the table of contents positioning may be inaccurate.
 
-::x{url="https://x.com/username/status/xxxxx"}
-
-::neodb{url="https://neodb.social/category/xxxxx"}
-```
-
-```
-🟡
-
-When embedded content is still loading,
-the table of contents positioning may be inaccurate.
-```
+  </Callout>
 
 ## Link Card
+
+This shortcode is an example of how to embed a link card in the content:
 
 ```
 ::link{url="https://pitchfork.com/reviews/albums/ichiko-aoba-luminescent-creatures/"}
 ```
 
-```
-🟡
+<Callout type="info">
 
-If you don’t need Link Card,
-you can set `linkCard` to `false` in `src/config.ts`,
-then you don't need to set adapter before building.
-```
+To use the link card short code, you need to set up an adapter in `src/astro.config.ts`. If you don’t need the link card shortcode, you can set `linkCard` to `false` in `src/config.ts`. In that case, you don’t need to configure the adapter before building.
+
+  </Callout>
 
 ## Spotify
+
+These shortcodes are an example of how to embed Spotify music in the content:
+
 ```
 ::spotify{url="https://open.spotify.com/track/41Y0ch6R3jzpJOZv6nhf9Z?si=6c82dbed65ab4853"}
 
 ::spotify{url="https://open.spotify.com/album/1kBPEN3NIVwjdmIjjNk9vB?si=Lz29MvjwRnKX9y3dhxlbaQ"}
 ```
 ## YouTube
+
+This shortcode is an example of how to embed YouTube videos in the content:
+
 ```
 ::youtube{url="https://www.youtube.com/embed/GlhV-OKHecI?si=KdB4rRPLAMEK-ozf"}
 ```
 ## BiliBili
+
+This shortcode is an example of how to embed BiliBili videos in the content:
+
 ```
 ::bilibili{url="https://www.bilibili.com/video/BV1Vm421W7pX/?vd_source=c0bc2746a6d2b23de50d26376498b2ff"}
 ```
 ## GitHub
+
+This shortcode is an example of how to embed GitHub repositories in the content:
+
 ```
 ::github{repo="the3ash/astro-chiri"}
 ```
 ## X Post
+
+This shortcode is an example of how to embed X posts in the content:
+
 ```
 ::x{url="https://x.com/DAVID_LYNCH/status/1174367510893752321"}
 ```
-## NeoDB (CN Only)
+## NeoDB
+
+These shortcodes are an example of how to embed NeoDB posts in the content.
+
 ```
 ::neodb{url="https://neodb.social/album/5nD3R8gmnVlsoOBdyO8PA3"}
 
@@ -73,3 +86,9 @@ then you don't need to set adapter before building.
 
 ::neodb{url="https://neodb.social/game/1hl18l0qD5UN93k8ZkCZ7Q"}
 ```
+
+<Callout type="info">
+
+This shortcode only works in the People's Republic of China
+
+  </Callout>
