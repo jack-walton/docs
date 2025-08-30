@@ -6,9 +6,8 @@ const meta = {
     }
   },
 
-"AXS": "The AXS App",
-
-"tea": "Getting Started with Green Tea",
+"astro-nano": "Astro Nano Theme",
+"chiri": "CHIRI Theme",
 
 "about": { 
   "title": "About",
