@@ -6,7 +6,7 @@ const meta = {
     }
   },
 
-"chiri": "CHIRI Theme",
+"chiri": "Chiri Theme",
 
 "further-reading": { 
   "title": "Further Reading",
