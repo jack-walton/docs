@@ -2,9 +2,15 @@
 title: Markdown Files
 ---
 
+import {Callout} from 'nextra/components'
+
 # Markdown Files
 
-This blog supports all the standard and extended Markdown syntax. It also supports React components in Markdown (MDX). The theme's stylesheet does not visually differentiate heading levels. If needed, you can update the styles in `src/styles/post.css`. 
+<Callout type="info">
+This theme uses Markdown to format content. See the [Markdown Guide](https://markdownguide.offshoot.io/) for basic syntax. To add interactive components to your Markdown files, you can use [MDX](https://mdxjs.com/) syntax.
+  </Callout>
+
+This blog supports all the standard and extended Markdown syntax. It also supports React components in Markdown (MDX). The theme's stylesheet does not visually differentiate heading levels. If needed, you can update the styles in the  `src/styles/post.css` file. 
 
 The blog also supports these HTML elements in Markdown files:
 
@@ -16,9 +22,16 @@ The blog also supports these HTML elements in Markdown files:
 | Keyboard     | `<kbd>`  |
 | Highlight    | `<mark>` |
 
+## Post Frontmatter
 
+Only `title` and `pubDate` are required fields.
 
-
+```yaml
+---
+title: 'Post Title'
+pubDate: '2025-07-10'
+---
+```
 
 ## Drafts
 

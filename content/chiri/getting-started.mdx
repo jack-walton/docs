@@ -27,7 +27,7 @@ pnpm install
 
 ## Customize the blog
 
-In a text editor, edit the settings in  `src/config.ts` .
+In a text editor, edit the settings in the  `src/config.ts`  file.
 
 The `SITE INFO` configuration defines the metadata for the website.
 
@@ -54,12 +54,11 @@ general: {
 	footer: true, // Show footer
 	fadeAnimation: true // Enable fade animations
 },
-
 ```
 
 The `DATE SETTINGS` configuration defines how the blog post dates are formatted.
 
-```TS
+```ts
 // DATE SETTINGS
 date: {
 	dateFormat: 'YYYY-MM-DD', // Date format: YYYY-MM-DD, MM-DD-YYYY, DD-MM-YYYY, MONTH DAY YYYY, DAY MONTH YYYY
@@ -70,7 +69,7 @@ date: {
 
 The `POST SETTINGS` configuration defines the behavior of the rendered Markdown files.
 
-```TS
+```ts
 post: {
 	readingTime: true, // Show reading time in posts
 	toc: true, // Show table of contents (when there is enough page width)
@@ -80,7 +79,25 @@ post: {
 }
 ```
 
-Update the `src/content/about/about.md` file. This file serves as the index and landing page for the blog.
+## Configure Syntax Highlighting
+
+You can configure the theme's syntax highlighting using `shikiConfig` in the `astro.config.ts` file.
+
+```tsx
+import { defineConfig } from 'astro/config'
+
+export default defineConfig({
+  markdown: {
+    shikiConfig: {
+      light: 'github-light',
+      dark: 'github-dark',
+      wrap: false
+    }
+  }
+})
+```
+
+See [Syntax Highlighting](https://docs.astro.build/en/guides/syntax-highlighting/) in the [Astro Docs](https://docs.astro.build/en/getting-started/) for more information.
 
 ## Deploy to Vercel
 
@@ -111,7 +128,7 @@ pnpm add -g vercel
 vercel
 ```
 
-You can also import the GitHub repository from the Vercel dashboard.
+You can also import the GitHub repository from the Vercel dashboard to deploy.
 
 ## Set up Analytics
 
@@ -124,7 +141,7 @@ In your repository, enter the following command to install the analytics package
 pnpm i @vercel/analytics
 ```
 
-In `src/layouts/BaseLayout.astro`, import the analytics component:
+In the  `src/layouts/BaseLayout.astro` file, import the analytics component:
 
 ```ts
 import Analytics from '@vercel/analytics/astro'
@@ -150,7 +167,7 @@ In your repository, enter the following command to install the speed insights pa
 pnpm i @vercel/speed-insights
 ```
 
-In `src/layouts/BaseLayout.astro`, import the speed insights component:
+In the  `src/layouts/BaseLayout.astro` file, import the speed insights component:
 
 ```jsx
 import  SpeedInsights  from "@vercel/speed-insights/astro"

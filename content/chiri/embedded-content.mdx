@@ -8,13 +8,15 @@ import {Callout} from 'nextra/components'
 
 Use these shortcodes to embed media:
 
-- `::link{url="https://xxxxx.xxx"}`
-- `::spotify{url="https://open.spotify.com/type/xxxxx"}`
-- `::youtube{url="https://www.youtube.com/watch?v=xxxxx"}`
-- `::bilibili{url="https://www.bilibili.com/video/xxxxx"}`
-- `::github{repo="username/repo"}`
-- `::x{url="https://x.com/username/status/xxxxx"}`
-- `::neodb{url="https://neodb.social/category/xxxxx"}`
+| Content Type | Shortcode                                                |
+| ------------ | -------------------------------------------------------- |
+| Link card    | `::link{url="https://xxxxx.xxx"}`                        |
+| Spotify      | `::spotify{url="https://open.spotify.com/type/xxxxx"}`   |
+| YouTube      | `::youtube{url="https://www.youtube.com/watch?v=xxxxx"}` |
+| Bilibili     | `::bilibili{url="https://www.bilibili.com/video/xxxxx"}` |
+| GitHub       | `::github{repo="username/repo"}`                         |
+| X            | `::x{url="https://x.com/username/status/xxxxx"}`         |
+| NeoDB        | `::neodb{url="https://neodb.social/category/xxxxx"}`     |
 
 <Callout type="info">
 
@@ -29,12 +31,6 @@ This shortcode is an example of how to embed a link card in the content:
 ```
 ::link{url="https://pitchfork.com/reviews/albums/ichiko-aoba-luminescent-creatures/"}
 ```
-
-<Callout type="info">
-
-To use the link card shortcode, you need to set up an adapter in `src/astro.config.ts`. If you don’t need the link card shortcode, you can set `linkCard` to `false` in `src/config.ts`. In that case, you don’t need to configure the adapter before building.
-
-  </Callout>
 
 ## Spotify
 
@@ -52,9 +48,9 @@ This shortcode is an example of how to embed YouTube videos in the content:
 ```
 ::youtube{url="https://www.youtube.com/embed/GlhV-OKHecI?si=KdB4rRPLAMEK-ozf"}
 ```
-## BiliBili
+## Bilibili
 
-This shortcode is an example of how to embed BiliBili videos in the content:
+This shortcode is an example of how to embed Bilibili videos in the content:
 
 ```
 ::bilibili{url="https://www.bilibili.com/video/BV1Vm421W7pX/?vd_source=c0bc2746a6d2b23de50d26376498b2ff"}
@@ -75,7 +71,7 @@ This shortcode is an example of how to embed X posts in the content:
 ```
 ## NeoDB
 
-These shortcodes are an example of how to embed NeoDB posts in the content.
+These shortcodes are an example of how to embed NeoDB posts in the content:
 
 ```
 ::neodb{url="https://neodb.social/album/5nD3R8gmnVlsoOBdyO8PA3"}
