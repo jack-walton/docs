@@ -2,14 +2,39 @@
 title: Theme Guide
 ---
 
-Chiri is a minimal blog theme built with [Astro](https://astro.build), offering customization options while preserving its clean aesthetic.
+import {Callout} from 'nextra/components'
 
----
 
-## Basic Commands
 
-- `pnpm new <title>` - Create a new post (use `_title` for drafts)
-- `pnpm update-theme` - Update the theme to the latest version
+# Usage Guide
+
+
+
+## Create a post
+
+In your repository, enter the following command to create new posts:
+
+```bash
+pnpm new <title>
+```
+
+You can also add your posts to the `src/content/posts` folder.
+
+## Update Theme
+
+<Callout
+
+type="warning">
+
+After you have configured the app and updated dependencies, this command can lead to serious merge conflicts. I don't recommend that you enter this command unless you intend to build the site from scratch.
+
+</Callout>
+
+To update to the latest version of the them, in your repository, enter this command from the terminal:
+
+```bash
+`pnpm update-theme` - Update the theme to the latest version
+```
 
 ## Main Files & Directories
 

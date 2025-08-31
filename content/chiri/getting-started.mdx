@@ -11,29 +11,161 @@ import {Steps, Callout} from 'nextra/components'
 
 ## Install the blog
 
-To download and install the blog, enter the following commands In the terminal:
+<Callout>
+
+These instructions assume that you use `pnpm` as your package manager and that you deploy to Vercel. 
+
+</Callout>
+
+To download and install the blog and its dependencies, enter the following commands In the terminal:
 
 ```bash
 git clone https://github.com/jack-walton/blog.git
 cd blog
+pnpm install
 ```
 
-## Configure the blog
+## Customize the blog
 
-In Visual Studio Code, edit t
+In a text editor, edit the settings in  `src/config.ts` .
 
-1. Edit `src/config.ts` and `src/content/about/about.md` to your liking.
+The `SITE INFO` configuration defines the metadata for the website.
 
-2. Use `pnpm new <title>` to create new posts, or add your posts to `src/content/posts`.
+```ts
+// SITE INFO
+site: {
+	website: 'https://jackwalton.net/', // Site domain
+	title: 'Jack Walton', // Site title
+	author: 'Jack Walton', // Author name
+	description: 'The personal blog for Jack Walton.', // Site description
+	language: 'en-US' // Default language
+},
+```
 
-3. You need to set adapter as follows before deploying to Netlify, Vercel, or other platforms, but you can set `linkCard` to `false` in `src/config.ts` to skip this step:
+The `GENERAL SETTINGS` configuration defines the appearance of the blog.
 
-   - **Netlify**: `pnpm add @astrojs/netlify` and add `adapter: netlify()` in `astro.config.ts`.
-   - **Vercel**: `pnpm add @astrojs/vercel` and add `adapter: vercel()` in `astro.config.ts`.
-   - **Cloudflare Pages**: `pnpm add @astrojs/cloudflare` and add `adapter: cloudflare()` in `astro.config.ts`.
-   - **Static (e.g. GitHub Pages)**: `pnpm add @astrojs/static` and add `adapter: static()` in `astro.config.ts`.
-   - Refer to [Astro Deployment Guides](https://docs.astro.build/en/guides/deploy/) for more details.
+```ts
+// GENERAL SETTINGS
+general: {
+	contentWidth: '35rem', // Content area width
+	centeredLayout: true, // Use centered layout (false for left-aligned)
+	themeToggle: false, // Show theme toggle button (uses system theme by default)
+	postListDottedDivider: true, // Show dotted divider in post list
+	footer: true, // Show footer
+	fadeAnimation: true // Enable fade animations
+},
 
-&emsp;[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start) [![Deploy to Vercel](https://vercel.com/button)](https://vercel.com/new) [![Deploy to Cloudflare Pages](https://deploy.workers.cloudflare.com/button)](https://pages.cloudflare.com/start)
+```
+
+The `DATE SETTINGS` configuration defines how the blog post dates are formatted.
+
+```TS
+// DATE SETTINGS
+date: {
+	dateFormat: 'YYYY-MM-DD', // Date format: YYYY-MM-DD, MM-DD-YYYY, DD-MM-YYYY, MONTH DAY YYYY, DAY MONTH YYYY
+	dateSeparator: '.', // Date separator: . - / (except for MONTH DAY YYYY and DAY MONTH YYYY)
+	dateOnRight: true // Date position in post list (true for right, false for left)
+},
+```
+
+The `POST SETTINGS` configuration defines the behavior of the rendered Markdown files.
+
+```TS
+post: {
+	readingTime: true, // Show reading time in posts
+	toc: true, // Show table of contents (when there is enough page width)
+	imageViewer: true, // Enable image viewer
+	copyCode: true, // Enable copy button in code blocks
+	linkCard: true // Enable link card
+}
+```
+
+Update the `src/content/about/about.md` file. This file serves as the index and landing page for the blog.
+
+## Deploy to Vercel
+
+To ensure that all features of the blog perform as expected, you need to set up an adapter before you deploy to Vercel.
+
+In the blog repository, enter the following command:
+
+```bash
+pnpm add @astrojs/vercel
+```
+
+In `astro.config.ts`,  enter the this adapter code:
+
+```ts
+import { defineConfig } from 'astro/config';
+import vercel from '@astrojs/vercel';
+
+export default defineConfig({
+  // ...
+  adapter: vercel(),
+});
+```
+
+In your repository, enter the following command to install the Vercel CLI and deploy the blog:
+
+```bash
+pnpm add -g vercel
+vercel
+```
+
+You can also import the GitHub repository from the Vercel dashboard.
+
+## Set up Analytics
+
+From your Vercel project dashboard, select the **Analytics** tab. Then, select **Enable**.
+
+Select your plan, then select **Enable** again.
+
+In your repository, enter the following command to install the analytics package:
+```bash
+pnpm i @vercel/analytics
+```
+
+In `src/layouts/BaseLayout.astro`, import the analytics component:
+
+```ts
+import Analytics from '@vercel/analytics/astro'
+```
+
+Use the `<Analytics/>` component in the base layout:
+```jsx
+<head>
+	<ThemeManager />
+	{fadeAnimation && <ClientRouter />}
+	<slot name="head" />
+	<Analytics/>
+</head>
+```
+
+## Set up Speed Insights
+
+From your Vercel project dashboard, select the **Speed Insights** tab. Then, select **Enable**.
+
+In your repository, enter the following command to install the speed insights package:
+
+```bash
+pnpm i @vercel/speed-insights
+```
+
+In `src/layouts/BaseLayout.astro`, import the speed insights component:
+
+```jsx
+import  SpeedInsights  from "@vercel/speed-insights/astro"
+```
+
+Use the `<SpeedInsights/>` component in your base layout:
+
+```jsx
+<head>
+	<ThemeManager />
+	{fadeAnimation && <ClientRouter />}
+	<slot name="head" />
+	<Analytics/>
+	<SpeedInsights/>
+</head>
+```
 
 </Steps>
