@@ -6,8 +6,6 @@ const meta = {
     }
   },
 
-"chiri": "Chiri Theme",
-
 "further-reading": { 
   "title": "Further Reading",
     type: "page",
