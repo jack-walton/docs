@@ -9,12 +9,13 @@ import {Callout, Cards} from 'nextra/components'
 The organization of links and information flow for my online presence can be visualized like this.
 
 <Callout>
-All sites and pages link to the index. For the sake of clarity, I have omitted these connections in the flowchart.
+All sites and pages link to the index. For the sake of clarty, I have omitted these connections in the flowchart.
 </Callout>
 
 
 ```mermaid
 flowchart TD
+    LinkedIn --> Index
     Index --> Projects
     Index --> Blog
     Index --> Docs
@@ -23,4 +24,6 @@ flowchart TD
     Projects --> BA[Didier Article]
     Projects --> GitHub
     Twitter --> Blog
+    GitHub --> Twitter
+    Blog --> Twitter
 ```
