@@ -1,15 +1,9 @@
 const meta = {
   "index": {
-    "title": "Introduction",
+    "title": "Start Here",
     "theme": {
       breadcrumb: false,
-    }
-  },
-
-  "portfolio": "Jack's Website",
-
-  "further-reading": { 
-  "title": "Further Reading",
+    },
     type: "page",
   },
 
@@ -17,6 +11,24 @@ const meta = {
   "title": "About",
     type: "page",
   },
+
+  "blog": { 
+  "title": "Blog",
+    type: "page",
+  },
+
+  "further-reading": { 
+  "title": "Bibliography",
+    type: "page",
+  },
+
+
+  "docs": { 
+  "title": "Docs",
+    type: "page",
+  },
+
+
 }
 
 export default meta;
