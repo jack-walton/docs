@@ -78,6 +78,9 @@ export default async function RootLayout({children}) {
         <Layout
             navbar={navbar}
             search={search}
+            sidebar={{
+                defaultMenuCollapseLevel: 1
+            }}
             pageMap={await getPageMap()}
             docsRepositoryBase="https://github.com/jack-walton/help.jackwalton.xyz/tree/main"
             footer={footer}
