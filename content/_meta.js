@@ -6,7 +6,7 @@ const meta = {
     }
   },
 
-  "portfolio": "My Website",
+  "portfolio": "Jack's Website",
 
   "further-reading": { 
   "title": "Further Reading",
