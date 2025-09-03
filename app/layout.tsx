@@ -55,7 +55,7 @@ const navbar = (
 
 const search = (
     <Search 
-      placeholder={"Search the documentation"}
+      placeholder={"Search this website"}
     />
 )
 const footer = <Footer>© {new Date().getFullYear()} MIT Licensed</Footer>
