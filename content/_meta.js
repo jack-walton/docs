@@ -6,12 +6,14 @@ const meta = {
     }
   },
 
-"further-reading": { 
+  "portfolio": "Portfolio Website",
+
+  "further-reading": { 
   "title": "Further Reading",
     type: "page",
   },
 
-"about": { 
+  "about": { 
   "title": "About",
     type: "page",
   },
