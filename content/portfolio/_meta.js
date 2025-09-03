@@ -11,7 +11,6 @@ const meta = {
     type: "separator",
     title: "Developer Docs",
   },
-  "information-architecture": "Information Architecture",
   "typography": "Typography",
   "color-palette": "Color Palette",
   "public-assets": "Public Assets",
