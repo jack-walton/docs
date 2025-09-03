@@ -8,26 +8,11 @@ const meta = {
     },
   },
 
-  "blog": {
-    type: 'page',
-    theme: {
-      typesetting: "article",
-      timestamp: false,
-         sidebar: false,
-    },
-  },
-
-  "posts" : {
-    "title": "Blog",
-          display: "hidden",
-
+  "blog": { 
+  "title": "Blog",
     type: "page",
-    theme: {
-      typesetting: "article",
-      timestamp: false,
-      sidebar: false,
-    },
   },
+
 
   "gallery": {
     "title": "Gallery",
