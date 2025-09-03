@@ -1,12 +1,4 @@
 const meta = {
-  "index": {
-    "title": "Blog",
-    "theme": {
-      breadcrumb: false,
-      sidebar: false,
-      pagination: false,
-    },
-  },
 
   "blog-1": {
     "title": "Blog 1",

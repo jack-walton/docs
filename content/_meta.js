@@ -8,9 +8,13 @@ const meta = {
     },
   },
 
-  "blog": { 
-  "title": "Blog",
-    type: "page",
+  "blog": {
+    type: 'page',
+    theme: {
+      typesetting: "article",
+      timestamp: false,
+         sidebar: false,
+    },
   },
 
   "docs": { 
@@ -22,7 +26,6 @@ const meta = {
   "title": "Bibliography",
     type: "page",
   },
-
 
 }
 
