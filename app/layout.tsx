@@ -43,10 +43,6 @@ const navbar = (
         logo={
             <p><strong>Documentation</strong></p>
         }
-        children={
-            <Link href="https://jackwalton.xyz" >jackwalton.xyz</Link>
-        }
-        
         // ... Your additional navbar options
 
         
@@ -58,6 +54,8 @@ const search = (
       placeholder={"Search this website"}
     />
 )
+
+
 const footer = <Footer>© {new Date().getFullYear()} MIT Licensed</Footer>
 
 export default async function RootLayout({children}) {
@@ -87,6 +85,11 @@ export default async function RootLayout({children}) {
                 prev: true,
                 next: true
             }}
+            feedback={{
+                content: null
+            }}
+
+            editLink={null}
             // ... Your additional layout options
         >
             {children}
