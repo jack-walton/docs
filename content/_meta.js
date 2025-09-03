@@ -8,11 +8,6 @@ const meta = {
     },
   },
 
-  "about": { 
-  "title": "About",
-    type: "page",
-  },
-
   "blog": { 
   "title": "Blog",
     type: "page",
