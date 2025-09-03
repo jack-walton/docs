@@ -1,10 +1,11 @@
 const meta = {
   "index": {
     "title": "Start Here",
+    display: "hidden",
     "theme": {
       breadcrumb: false,
+      sidebar: false,
     },
-    type: "page",
   },
 
   "about": { 
@@ -17,14 +18,13 @@ const meta = {
     type: "page",
   },
 
-  "further-reading": { 
-  "title": "Bibliography",
+  "docs": { 
+  "title": "Docs",
     type: "page",
   },
 
-
-  "docs": { 
-  "title": "Docs",
+  "further-reading": { 
+  "title": "Bibliography",
     type: "page",
   },
 
@@ -32,4 +32,3 @@ const meta = {
 }
 
 export default meta;
-
