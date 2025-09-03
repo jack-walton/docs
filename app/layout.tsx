@@ -4,6 +4,7 @@ import {getPageMap} from 'nextra/page-map'
 import 'nextra-theme-docs/style.css'
 import Link from "next/link";
 import { Analytics } from '@vercel/analytics/next';
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export const metadata = {
     // Define your metadata here
@@ -90,6 +91,7 @@ export default async function RootLayout({children}) {
         >
             {children}
             <Analytics />
+            <SpeedInsights/>
         </Layout>
         </body>
         </html>
