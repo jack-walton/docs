@@ -1,15 +1,15 @@
 const meta = {
   "index": {
-    "title": "Start Here",
-    display: "hidden",
+    "title": "Blog",
     "theme": {
       breadcrumb: false,
       sidebar: false,
+      pagination: false,
     },
   },
 
   "blog-1": {
-    "title": "Start Here",
+    "title": "Blog 1",
     display: "hidden",
     "theme": {
       breadcrumb: false,
@@ -18,7 +18,7 @@ const meta = {
   },
 
     "blog-2": {
-    "title": "Start Here",
+    "title": "Blog 2",
     display: "hidden",
     "theme": {
       breadcrumb: false,
@@ -27,7 +27,7 @@ const meta = {
   },
 
     "blog-3": {
-    "title": "Start Here",
+    "title": "Blog 3",
     display: "hidden",
     "theme": {
       breadcrumb: false,
