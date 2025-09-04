@@ -43,7 +43,7 @@ const banner = <Banner storageKey="1.0-release">Version 1.0 of the Help pages ar
 const navbar = (
     <Navbar
         logo={
-            <p><strong>Documentation</strong></p>
+            <p><strong>Jack Walton</strong></p>
         }
         // ... Your additional navbar options
 
