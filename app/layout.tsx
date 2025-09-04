@@ -1,4 +1,4 @@
-import {Footer, Layout, Navbar} from 'nextra-theme-docs'
+ok import {Footer, Layout, Navbar} from 'nextra-theme-docs'
 import {Banner, Head, Search} from 'nextra/components'
 import {getPageMap} from 'nextra/page-map'
 import 'nextra-theme-docs/style.css'
@@ -41,7 +41,7 @@ const banner = <Banner storageKey="1.0-release">Version 1.0 of the Help pages ar
 const navbar = (
     <Navbar
         logo={
-            <p><strong>Jack Walton</strong></p>
+            <p><strong>Documentation</strong></p>
         }
         // ... Your additional navbar options
 
