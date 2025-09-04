@@ -5,6 +5,7 @@ const meta = {
     "theme": {
       breadcrumb: false,
       sidebar: false,
+      toc: false,
     },
   },
 

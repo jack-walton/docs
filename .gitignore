@@ -59,3 +59,5 @@ public/_pagefind/pagefind.en_c0535ef096.pf_meta
 /public/_pagefind
 /public/_pagefind
 /public/_pagefind
+.vercel
+.env*.local
