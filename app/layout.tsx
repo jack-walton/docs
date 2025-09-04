@@ -13,7 +13,7 @@ export const metadata = {
       default: 'Jack Walton | Docs',
       template: '%s | Docs',
     },
-    description: 'Some developer documentation for my projects',
+    description: 'Some documentation for my projects',
 
     icons: {
       icon: '/icon.svg',
@@ -21,7 +21,7 @@ export const metadata = {
     },
     openGraph: {
       title: 'Docs',
-      description: 'Jack Walton\'s portfolio.',
+      description: 'Some documentation for my projects.',
     url: 'https://docs.jackwalton.xyz', // Ensure baseUrl resolves to a full URL
     siteName: 'Documentation',
     locale: 'en_US',
