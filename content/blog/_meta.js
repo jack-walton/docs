@@ -1,6 +1,15 @@
 const meta = {
 
-  "#" : {
+  "index": {
+    "title": "Preface",
+    "theme": {
+      breadcrumb: false,
+      sidebar: false,
+      toc: false,
+    },
+  },
+
+  "#": {
     type: "separator",
     title: "2025",
   },
@@ -10,24 +19,38 @@ const meta = {
     "theme": {
       breadcrumb: false,
       sidebar: false,
+      toc: false
     },
   },
 
-    "blog-2": {
+  "blog-2": {
     "title": "Blog 2",
     "theme": {
       breadcrumb: false,
       sidebar: false,
+      toc: false
     },
   },
 
-    "blog-3": {
+  "blog-3": {
     "title": "Blog 3",
     "theme": {
       breadcrumb: false,
       sidebar: false,
     },
   },
+
+    "##": {
+    type: "separator",
+    title: "2024",
+  },
+
+    "###": {
+    type: "separator",
+    title: "2023",
+  },
+
+  
 
 
 }

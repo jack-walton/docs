@@ -1,6 +1,6 @@
 const meta = {
   "index": {
-    "title": "Start Here",
+    "title": "About",
     display: "hidden",
     "theme": {
       breadcrumb: false,
@@ -8,11 +8,13 @@ const meta = {
     },
   },
 
-  "blog": { 
-  "title": "Blog",
-    type: "page",
+   "blog": {
+    "type": "page",
+    "title": "Blog",
+    "theme": {
+      typesetting: "article",
+    },
   },
-
 
   "gallery": {
     "title": "Gallery",
@@ -28,7 +30,7 @@ const meta = {
     type: "page",
   },
 
-  "further-reading": { 
+  "bibliography": { 
   "title": "Bibliography",
     type: "page",
   },

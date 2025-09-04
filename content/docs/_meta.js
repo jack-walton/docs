@@ -5,7 +5,7 @@ const meta = {
   },
 
   "portfolio-overview": "Overview",
-  "send-email": "Send Email",
+  "help-page": "Help Page",
 
   "##" : {
     type: "separator",
@@ -13,7 +13,6 @@ const meta = {
   },
   "typography": "Typography",
   "color-palette": "Color Palette",
-  "public-assets": "Public Assets",
   "components": "Components",
   "analytics": "Analytics",
   "a-b-testing": "A/B Testing",
