@@ -1,4 +1,4 @@
-import {Footer, Layout, Navbar} from 'nextra-theme-docs'
+ok import {Footer, Layout, Navbar} from 'nextra-theme-docs'
 import {Banner, Head, Search} from 'nextra/components'
 import {getPageMap} from 'nextra/page-map'
 import 'nextra-theme-docs/style.css'
@@ -13,7 +13,7 @@ export const metadata = {
       default: 'Jack Walton | Docs',
       template: '%s | Docs',
     },
-    description: 'Some developer documentation for my projects',
+    description: 'Some documentation for my projects',
 
     icons: {
       icon: '/icon.svg',
@@ -21,7 +21,7 @@ export const metadata = {
     },
     openGraph: {
       title: 'Docs',
-      description: 'Jack Walton\'s portfolio.',
+      description: 'Some documentation for my projects.',
     url: 'https://docs.jackwalton.xyz', // Ensure baseUrl resolves to a full URL
     siteName: 'Documentation',
     locale: 'en_US',
@@ -41,7 +41,7 @@ const banner = <Banner storageKey="1.0-release">Version 1.0 of the Help pages ar
 const navbar = (
     <Navbar
         logo={
-            <p><strong>Jack Walton</strong></p>
+            <p><strong>Documentation</strong></p>
         }
         // ... Your additional navbar options
 
