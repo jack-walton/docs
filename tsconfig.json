@@ -36,7 +36,7 @@
     ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx"
-  ],
+, "content/blog/_meta.js"  ],
   "exclude": [
     "node_modules"
   ]
