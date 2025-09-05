@@ -14,6 +14,7 @@ const meta = {
     "title": "Blog",
     "theme": {
       typesetting: "article",
+      toc: false,
     },
   },
 
