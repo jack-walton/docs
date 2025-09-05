@@ -16,34 +16,34 @@ export default function ContactForm() {
   );
 
   if (state.succeeded) {
-    return <p className="text-center mt-16">Thanks! I got your message.</p>;
+    return <p className="text-center mt-16 text-[var(--color-primary-900)] dark:text-[var(--color-primary-100)]">Thanks! I got your message.</p>;
   }
 
   return (
     <section className="text-base">
       <form
         onSubmit={handleSubmit}
-        className="space-y-4 flex flex-col border border-solid rounded-lg border-gray-300 dark:border-neutral-700 p-4 max-w-lg w-full mb-16 mt-16"
+        className="space-y-4 flex flex-col border border-solid rounded-lg border-[var(--color-primary-200)] dark:border-[var(--color-primary-700)] p-4 max-w-lg w-full mb-16 mt-16"
       >
         <div>
-          <label>Email Address</label>
+          <label className="text-[var(--color-primary-900)] dark:text-[var(--color-primary-100)]">Email Address</label>
           <input
             id="email"
             type="email"
             name="email"
             required
-            className="border border-neutral-200 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-900 text-neutral-800 dark:text-neutral-200 rounded-lg px-3 py-2 my-2 w-full focus:outline-none focus:ring-2 focus:ring-neutral-400 dark:focus:ring-neutral-600"
+            className="border border-[var(--color-primary-200)] dark:border-[var(--color-primary-700)] bg-[var(--color-primary-50)] dark:bg-[var(--color-primary-900)] text-[var(--color-primary-900)] dark:text-[var(--color-primary-100)] rounded-lg px-3 py-2 my-2 w-full focus:outline-none focus:ring-2 focus:ring-[var(--color-primary-600)]"
           />
           <ValidationError prefix="Email" field="email" errors={state.errors} />
         </div>
 
         <div>
-          <label htmlFor="message">Message</label>
+          <label htmlFor="message" className="text-[var(--color-primary-900)] dark:text-[var(--color-primary-100)]">Message</label>
           <textarea
             id="message"
             name="message"
             required
-            className="border border-neutral-200 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-900 text-neutral-800 dark:text-neutral-200 rounded-lg px-3 py-2 my-2 w-full focus:outline-none focus:ring-2 focus:ring-neutral-400 dark:focus:ring-neutral-600"
+            className="border border-[var(--color-primary-200)] dark:border-[var(--color-primary-700)] bg-[var(--color-primary-50)] dark:bg-[var(--color-primary-900)] text-[var(--color-primary-900)] dark:text-[var(--color-primary-100)] rounded-lg px-3 py-2 my-2 w-full focus:outline-none focus:ring-2 focus:ring-[var(--color-primary-600)]"
           />
           <ValidationError prefix="Message" field="message" errors={state.errors} />
         </div>
@@ -51,7 +51,7 @@ export default function ContactForm() {
         <button
           type="submit"
           disabled={state.submitting}
-          className="bg-neutral-800 dark:bg-neutral-200 text-neutral-50 dark:text-neutral-900 px-4 py-2 rounded-lg my-2 hover:bg-neutral-700 dark:hover:bg-neutral-300 focus:outline-none focus:ring-2 focus:ring-neutral-400 dark:focus:ring-neutral-600 disabled:opacity-50 disabled:cursor-not-allowed"
+          className="bg-[var(--color-primary-900)] dark:bg-[var(--color-primary-300)] border border-solid rounded-lg border-[var(--color-primary-200)] dark:border-[var(--color-primary-700)] text-[var(--color-primary-50)] dark:text-[var(--color-primary-900)] px-4 py-2 rounded-lg my-2 hover:bg-[var(--color-primary-800)] dark:hover:bg-[var(--color-primary-400)] focus:outline-none focus:ring-2 focus:ring-[var(--color-primary-600)] disabled:opacity-50 disabled:cursor-not-allowed"
         >
           Submit
         </button>
