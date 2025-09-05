@@ -13,8 +13,6 @@ const meta = {
     "type": "page",
     "title": "Blog",
     "theme": {
-      typesetting: "article",
-      toc: false,
     },
   },
 
