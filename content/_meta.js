@@ -25,13 +25,22 @@ const meta = {
     },
   },
 
+  "playlists": {
+    "title": "Playlists",
+    "type": "page",
+    "theme": {
+      "timestamp": false,
+      "sidebar": false,
+    },
+  },
+
   "docs": { 
   "title": "Docs",
     type: "page",
   },
 
-  "bibliography": { 
-  "title": "Bibliography",
+  "reads": { 
+  "title": "Reads",
     type: "page",
   },
 
