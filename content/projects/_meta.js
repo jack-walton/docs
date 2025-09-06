@@ -1,8 +1,15 @@
 const meta = {  
   
+  "index": { 
+    title: "Overview",
+    theme: {
+      pagination: false,
+    }
+  },
+
   "#" : {
     "type": "separator",
-    "title": "University of Missouri - Kansas City",
+    "title": "CODICES Digital Humanities Lab",
   },
 
   "didier": {

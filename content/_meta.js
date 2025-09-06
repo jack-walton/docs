@@ -17,8 +17,8 @@ const meta = {
     type: "page",
   },
 
-  "cv": { 
-  "title": "CV",
+  "projects": { 
+  "title": "Projects",
   type: "page",
   },
 
