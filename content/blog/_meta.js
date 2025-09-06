@@ -1,3 +1,5 @@
+import { pageview } from "@vercel/analytics";
+
 const meta = {
   "index": {
     "title": "Blog",

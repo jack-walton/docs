@@ -6,23 +6,20 @@ const meta = {
 
   "portfolio-overview": "Overview",
   "help-page": "Help Page",
+  "release-notes": "Release Notes",
+  
 
   "##" : {
     type: "separator",
     title: "Developer Docs",
   },
+
+  "installation": "Installation",
   "typography": "Typography",
   "color-palette": "Color Palette",
-  "components": "Components",
+  "contact-form": "Contact Form",
   "analytics": "Analytics",
   "a-b-testing": "A/B Testing",
-
-   "###" : {
-    type: "separator",
-    title: "Release Notes",
-  },
-
-  "release-notes-1": "Version 1",
 
 }
 

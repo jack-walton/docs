@@ -35,7 +35,7 @@ const meta = {
   },
 
   "docs": { 
-  "title": "Docs",
+  "title": "Documentation",
     type: "page",
   },
 
