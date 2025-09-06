@@ -1,5 +1,5 @@
 @import "tailwindcss";
 
-body {
+html {
     overscroll-behavior-y: none;
 }
