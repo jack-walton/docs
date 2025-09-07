@@ -17,8 +17,8 @@ const meta = {
     type: "page",
   },
 
-  "projects": { 
-  "title": "Projects",
+  "academia": { 
+  "title": "Academia",
   type: "page",
   },
 

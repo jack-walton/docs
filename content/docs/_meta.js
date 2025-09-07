@@ -4,7 +4,7 @@ const meta = {
     title: "User Guide",
   },
 
-  "portfolio-overview": "Overview",
+  "index": "Overview",
   "help-page": "Help Page",
   "release-notes": "Release Notes",
   
