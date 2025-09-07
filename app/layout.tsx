@@ -18,18 +18,18 @@ export const metadata = {
     description: 'Some documentation for my projects',
 
     icons: {
-      icon: '/icon.svg',
-      shortcut: '/icon.svg',
+      icon: '/images/general/icon.svg',
+      shortcut: '/images/general/icon.svg',
     },
     openGraph: {
       title: 'Docs',
       description: 'Some documentation for my projects.',
-    url: 'https://docs.jackwalton.xyz', // Ensure baseUrl resolves to a full URL
+    url: 'https://jackwalton.xyz', // Ensure baseUrl resolves to a full URL
     siteName: 'Documentation',
     locale: 'en_US',
     type: 'website',
     images: [{
-      url: '/thumbnail.png',
+      url: '/images/general/thumbnail.png',
       width: 1200, // Updated to recommended size
       height: 630, // Updated to recommended size
       alt: 'Jack Walton',
