@@ -10,20 +10,13 @@ const meta = {
     },
   },
 
-
-
-  "docs": { 
-  "title": "Documentation",
-    type: "page",
-  },
-
-  "academia": { 
-  "title": "Academia",
+  "surop": { 
+  "title": "Grant Proposal",
   type: "page",
   },
 
-  "reads": { 
-  "title": "Bibliography",
+  "AXS": { 
+  "title": "AXS Guide",
     type: "page",
   },
 
