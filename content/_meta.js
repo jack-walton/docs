@@ -10,15 +10,17 @@ const meta = {
     },
   },
 
+  "AXS": { 
+  "title": "AXS Guide",
+    type: "page",
+  },
+
   "surop": { 
   "title": "Grant Proposal",
   type: "page",
   },
 
-  "AXS": { 
-  "title": "AXS Guide",
-    type: "page",
-  },
+
 
 }
 
