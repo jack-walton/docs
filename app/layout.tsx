@@ -12,10 +12,10 @@ export const metadata = {
     // Define your metadata here
     // For more information on metadata API, see: https://nextjs.org/docs/app/building-your-application/optimizing/metadata
     title: {
-      default: 'Jack Walton | Docs',
-      template: '%s | Docs',
+      default: 'Jack Walton | Portfolio',
+      template: '%s | Portfolio',
     },
-    description: 'Some documentation for my projects',
+    description: 'A portfolio of grant writing, user guides, and other technical writing',
 
     icons: {
       icon: '/images/general/icon.svg',
@@ -43,7 +43,7 @@ const banner = <Banner storageKey="1.0-release">Version 1.0 of the Help pages ar
 const navbar = (
     <Navbar
         logo={
-            <p><strong>Jack Walton</strong></p>
+            <p><strong>Jack Walton | Portfolio</strong></p>
         }
         // ... Your additional navbar options
 
