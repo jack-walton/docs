@@ -46,6 +46,9 @@ const navbar = (
             <p><strong>Jack Walton | Portfolio</strong></p>
         }
         // ... Your additional navbar options
+        children={
+            <Link href="https://jackwalton.net" >jackwalton.net</Link>
+        }
 
         
     />
