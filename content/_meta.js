@@ -20,6 +20,11 @@ const meta = {
   type: "page",
   },
 
+  "bandcamp": { 
+  "title": "Music Information Retrieval in Bandcamp",
+  type: "page",
+  },
+
 
 
 }
