@@ -1,2 +1,11 @@
 @import "tailwindcss";
 
+img {
+  @apply rounded-lg border border-black;
+}
+
+@media (prefers-color-scheme: dark) {
+  img {
+    @apply border-gray-500;
+  }
+}
