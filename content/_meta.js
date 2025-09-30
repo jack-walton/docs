@@ -15,15 +15,17 @@ const meta = {
     type: "page",
   },
 
+  "bandcamp": { 
+  "title": "Music Information Retrieval in Bandcamp",
+  type: "page",
+  },
+
   "surop": { 
   "title": "Grant Proposal",
   type: "page",
   },
 
-  "bandcamp": { 
-  "title": "Music Information Retrieval in Bandcamp",
-  type: "page",
-  },
+
 
 
 
