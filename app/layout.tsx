@@ -1,10 +1,9 @@
 import 'app/globals.css'
 
 import {Footer, Layout, Navbar} from 'nextra-theme-docs'
-import {Banner, Head, Search} from 'nextra/components'
+import {Head, Search} from 'nextra/components'
 import {getPageMap} from 'nextra/page-map'
 import 'nextra-theme-docs/style.css'
-import Link from "next/link";
 import { Analytics } from '@vercel/analytics/next';
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
@@ -12,20 +11,20 @@ export const metadata = {
     // Define your metadata here
     // For more information on metadata API, see: https://nextjs.org/docs/app/building-your-application/optimizing/metadata
     title: {
-      default: 'Jack Walton | Portfolio',
-      template: '%s | Portfolio',
+      default: 'Jack Walton',
+      template: '%s | Jack Walton',
     },
-    description: 'A portfolio of grant writing, user guides, and other technical writing',
+    description: 'The personal website of Jack Walton, a writer and researcher.',
 
     icons: {
-      icon: '/images/general/icon.svg',
-      shortcut: '/images/general/icon.svg',
+      icon: '/images/general/favicon-16x16.png',
+      shortcut: '/images/general/favicon-16x16.png',
     },
     openGraph: {
-      title: 'Docs',
-      description: 'Some documentation for my projects.',
-    url: 'https://jackwalton.xyz', // Ensure baseUrl resolves to a full URL
-    siteName: 'Documentation',
+      title: 'Jack Walton',
+      description: 'Writer and researcher.',
+    url: 'https://jackwalton.net', // Ensure baseUrl resolves to a full URL
+    siteName: 'Jack Walton',
     locale: 'en_US',
     type: 'website',
     images: [{
@@ -38,19 +37,12 @@ export const metadata = {
   },
 };
 
-const banner = <Banner storageKey="1.0-release">Version 1.0 of the Help pages are now available. <Link href="https://jackwalton.xyz/blog/open-source" style={{ textDecoration: 'underline' }}>Read more in my blog</Link> →</Banner>
-
 const navbar = (
     <Navbar
         logo={
-            <p><strong>Docs</strong></p>
+            <nav className="text-3xl font-bold">Jack Walton</nav>
         }
         // ... Your additional navbar options
-        children={
-            <Link href="https://jackwalton.net" >jackwalton.net</Link>
-        }
-
-        
     />
 )
 

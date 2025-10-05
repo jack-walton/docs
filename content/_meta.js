@@ -10,24 +10,26 @@ const meta = {
     },
   },
 
-  "AXS": { 
-  "title": "AXS Guide",
+  "contact": { 
+    "title": "Contact",
     type: "page",
   },
 
-  "bandcamp": { 
-  "title": "Music Information Retrieval in Bandcamp",
-  type: "page",
+  "portfolio": { 
+    "title": "Portfolio",
+    type: "page",
   },
 
-  "surop": { 
-  "title": "Grant Proposal",
-  type: "page",
+  "links": { 
+    "title": "Links",
+    type: "page",
   },
 
-
-
-
+  blog: { 
+    "title": "Blog",
+    type: "page",
+    href: "https://suburbanrunaway.substack.com/"
+  },
 
 }
 
