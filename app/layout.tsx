@@ -70,6 +70,12 @@ export default async function RootLayout({children}) {
         >
             <link rel="shortcut icon" href="/images/general/favicon-16x16.png"/>
             {/* Your additional tags should be passed as `children` of `<Head>` element */}
+            <link
+  rel="apple-touch-icon"
+  href="/images/general/apple-touch-icon"
+  type="image"
+  sizes="<generated>"
+/>
         </Head>
         <body>
         <Layout
