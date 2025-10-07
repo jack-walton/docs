@@ -61,3 +61,5 @@ public/_pagefind/pagefind.en_c0535ef096.pf_meta
 /public/_pagefind
 .vercel
 .env*.local
+content/.DS_Store
+content/.DS_Store
