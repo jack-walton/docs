@@ -15,15 +15,17 @@ const meta = {
     type: "page",
   },
 
+  "links": { 
+    "title": "Links",
+    type: "page",
+  },
+
   "portfolio": { 
     "title": "Portfolio",
     type: "page",
   },
 
-  "links": { 
-    "title": "Links",
-    type: "page",
-  },
+
 
   blog: { 
     "title": "Blog",
