@@ -72,7 +72,7 @@ export default async function RootLayout({children}) {
             {/* Your additional tags should be passed as `children` of `<Head>` element */}
             <link
   rel="apple-touch-icon"
-  href="/images/general/apple-touch-icon"
+  href="/images/general/apple-touch-icon.png"
   type="image"
   sizes="<generated>"
 />
