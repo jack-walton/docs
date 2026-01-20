@@ -1,36 +1,31 @@
 const meta = {
   "index": {
-    "title": "About",
-    "display": "hidden",  
-    "type": "page",
+    "title": "Introduction",
     "theme": {
-      breadcrumb: false,
-      sidebar: false,
       toc: false,
+      breadcrumb: false,
     },
   },
 
-  "contact": { 
-    "title": "Contact",
-    type: "page",
+  "AXS": { 
+    "title": "AXS Guide",
   },
 
-  "links": { 
-    "title": "Links",
-    type: "page",
+  "bandcamp": { 
+    "title": "Music Information Retrieval in Bandcamp",
+      "theme": {
+        toc: false,
+        breadcrumb: false,
+    },
   },
 
-  "portfolio": { 
-    "title": "Portfolio",
-    type: "page",
+  "surop": { 
+    "title": "Grant Proposal",
   },
 
 
-
-  blog: { 
-    "title": "Blog",
-    type: "page",
-    href: "https://suburbanrunaway.substack.com/"
+  "resume": { 
+    "title": "Resume",
   },
 
 }

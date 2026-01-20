@@ -11,27 +11,27 @@ export const metadata = {
     // Define your metadata here
     // For more information on metadata API, see: https://nextjs.org/docs/app/building-your-application/optimizing/metadata
     title: {
-      default: 'Jack Walton',
-      template: '%s | Jack Walton',
+      default: "Jack's Portfolio",
+      template: "%s | Jack's Portfolio",
     },
-    description: 'The personal website of Jack Walton, a writer and researcher.',
+    description: 'The professional portfolio of Jack Walton.',
 
     icons: {
       icon: '/images/general/favicon-16x16.png',
       shortcut: '/images/general/favicon-16x16.png',
     },
     openGraph: {
-      title: 'Jack Walton',
-      description: 'Writer and researcher.',
-    url: 'https://jackwalton.net', // Ensure baseUrl resolves to a full URL
-    siteName: 'Jack Walton',
-    locale: 'en_US',
-    type: 'website',
+      title: "Jack's Portfolio",
+      description: "Jack's professional portfolio.",
+      url: 'https://jackwalton.net', // Ensure baseUrl resolves to a full URL
+      siteName: "Jack's Portfolio",
+      locale: 'en_US',
+      type: 'website',
     images: [{
       url: '/images/general/thumbnail.png',
       width: 1200, // Updated to recommended size
       height: 630, // Updated to recommended size
-      alt: 'Jack Walton',
+      alt: "Jack's Portfolio",
       type: 'image/png',
     }],
   },
@@ -40,7 +40,7 @@ export const metadata = {
 const navbar = (
     <Navbar
         logo={
-            <nav className="text-3xl font-bold">Jack Walton</nav>
+            <nav className="text-3xl font-bold">Jack's Portfolio</nav>
         }
         // ... Your additional navbar options
     />
@@ -85,7 +85,7 @@ export default async function RootLayout({children}) {
                 defaultMenuCollapseLevel: 1
             }}
             pageMap={await getPageMap()}
-            docsRepositoryBase="https://github.com/jack-walton/help.jackwalton.xyz/tree/main"
+            docsRepositoryBase="https://github.com/jack-walton/docs/tree/main/content"
             footer={footer}
             navigation={{
                 prev: true,
