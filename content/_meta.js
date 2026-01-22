@@ -28,6 +28,12 @@ const meta = {
     "title": "Resume",
   },
 
+  "Home": {
+    title: 'jackwalton.net',
+    type: 'page',
+    href: 'https://jackwalton.net'
+  }
+
 }
 
 export default meta;
